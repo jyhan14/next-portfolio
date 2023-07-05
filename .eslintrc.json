@@ -1,5 +1,12 @@
 {
-  "extends": ["react-app", "eslint:recommended", "prettier"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@next/next/recommended"
+  ],
   "env": {
     "es6": true
   },
@@ -9,6 +16,7 @@
     "no-console": ["error", { "allow": ["warn", "error", "info"] }], // console.log() 금지
     "eqeqeq": "error", // 일치 연산자 사용 필수
     "dot-notation": "error", // 가능하다면 dot notation 사용
-    "no-unused-vars": "error" // 사용하지 않는 변수 금지
+    "no-unused-vars": "error", // 사용하지 않는 변수 금지
+    "react/react-in-jsx-scope": "off"
   }
 }
